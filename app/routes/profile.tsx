@@ -1,9 +1,11 @@
 import type { Route } from "./+types/profile";
-import Profile from "~/profile/profile";
+import Profile from "~/pages/profile/profile";
+
+const pathName = "Profile"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Home - Prianka Anggara" },
+    { title: `${pathName} - Prianka Anggara`  },
   ];
 }
 

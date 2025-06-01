@@ -1,14 +1,14 @@
+import NotYetImplemented from "~/shared/components/NotYetImplemented";
 import type { Route } from "./+types/portofolio";
+
+const pathName = "Portfolio"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "INI portofolio" },
+    { title: `${pathName} - Prianka Anggara`  },
   ];
 }
 
 export default function portofolioRoute() {
-  return <h1>
-    TEST portofolio
-  </h1>;;
+  return <NotYetImplemented name={pathName}/>
 }
-//test

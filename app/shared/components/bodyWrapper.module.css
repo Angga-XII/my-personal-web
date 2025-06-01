@@ -1,0 +1,5 @@
+.body-wrapper{
+  composes: center-flex-column from '../../app.module.css';
+  max-width: 100vw;
+  background-color: var(--color-white);
+}
