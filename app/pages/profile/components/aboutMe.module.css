@@ -1,0 +1,134 @@
+.hello {
+  margin-top: 0;
+  color: var(--color-black);
+  font-weight: 500;
+  font-family: var(--base-font);
+  letter-spacing: -0.025em;
+}
+
+.hello-web {
+  composes: hello;
+
+  font-size: 30px;
+  text-align: left;
+}
+
+.hello-mobile {
+  composes: hello;
+  font-size: 26px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.name {
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: var(--color-black);
+  font-weight: 800;
+  font-family: var(--base-font);
+  letter-spacing: -0.035em;
+}
+
+.name-web {
+  composes: name;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.name-mobile {
+  composes: name;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2%;
+  color: var(--color-black);
+  /* margin: 0; */
+  font-weight: 800;
+  font-family: var(--base-font);
+  letter-spacing: -0.035em;
+}
+
+.title-web {
+  composes: title;
+
+  /* font-size: 40px; */
+  line-height: 48px;
+  text-align: left;
+}
+
+.title-mobile {
+  composes: title;
+  /* font-size: 32px; */
+  line-height: 48px;
+  text-align: center;
+}
+
+.exp {
+  margin-top: 0;
+  color: var(--color-black);
+  font-weight: 500;
+  font-family: var(--base-font);
+  letter-spacing: -0.025em;
+}
+
+.exp-web {
+  composes: exp;
+
+  font-size: 20px;
+  text-align: left;
+}
+
+.exp-mobile {
+  composes: exp;
+  font-size: 18px;
+  line-height: 20px;
+  /* text-align: center; */
+}
+
+.contact-button {
+  padding: 10px 24px;
+  border: none;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+  font-family: var(--base-font);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+.web {
+  composes: center-flex-row from "../../../app.module.css";
+  position: relative;
+  /* background-color: green; */
+  height: calc(var(--wrapper-width) / var(--golden-ratio) * 1px);
+  margin-top: calc(var(--wrapper-width) / var(--golden-ratio) - 120px) px;
+}
+
+.mobile {
+  composes: center-flex-column from "../../../app.module.css";
+  /* position: relative; */
+  /* background-color: green; */
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 0 5% 0;
+  color: transparent;
+}
+
+.wrapper img {
+  max-width: initial;
+  object-fit: contain;
+}
