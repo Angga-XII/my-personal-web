@@ -1,0 +1,33 @@
+.sosmed {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  aspect-ratio: 1;
+  width: 64px;
+  min-width: 64px;
+  margin: 10px 1%;
+  padding: 16px;
+  border-width: 2px;
+  border-color: var(--color-black);
+  background-color: var(--color-white);
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.5s,
+    background-color 0.5s;
+}
+
+.sosmed:hover {
+  transform: rotate(135deg) scale(1.2);
+}
+
+.sosmed .img {
+  background-color: white;
+  padding: 2px;
+  transition:
+    transform 0.5s,
+    background-color 0.5s;
+}
+
+.sosmed:hover .img {
+  transform: rotate(-135deg) scale(1.3);
+}
