@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--color-black);
+}
+
+.link {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.toggle-bg {
+  background-color: var(--color-white);
+}
+
+.toggle-circle {
+  background-color: var(--color-black);
+}
