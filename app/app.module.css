@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+:root {
+  --wrapper-width: 1200;
+  --golden-ratio: 1.61803398875;
+
+  /* color */
+  --color-white: white;
+  --color-black: black;
+
+  /* not used yet */
+  --color-text-body: black;
+  --color-text-headings: black;
+  --color-text-button: white;
+  --color-toggle-body: white;
+  --color-bg-button: black;
+  --color-body-bg: white;
+
+  /* font */
+  --base-font: "Helvetica Neue", sans-serif;
+  font-family: var(--base-font);
+}
+
+[data-theme="dark"] {
+  --wrapper-width: 1200;
+  --golden-ratio: 1.61803398875;
+
+  /* color */
+  --color-white: black;
+  --color-black: white;
+
+  /* not used yet */
+  --color-text-body: white;
+  --color-text-headings: white;
+  --color-text-button: black;
+  --color-toggle-body: black;
+  --color-bg-button: white;
+  --color-body-bg: black;
+
+  /* font */
+  --base-font: "Helvetica Neue", sans-serif;
+  font-family: var(--base-font);
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+}
+
+.center-flex-row {
+  composes: center-flex;
+  flex-direction: row;
+}
+
+.center-flex-column {
+  composes: center-flex;
+  flex-direction: column;
+}
