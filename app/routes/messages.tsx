@@ -1,14 +1,14 @@
+import NotYetImplemented from "~/shared/components/NotYetImplemented";
 import type { Route } from "./+types/messages";
+
+const pathName = "Messages"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "INI MESSAGES" },
+    { title: `${pathName} - Prianka Anggara`  },
   ];
 }
 
 export default function messagesRoute() {
-  return <h1>
-    TEST messages
-  </h1>;;
+  return <NotYetImplemented name={pathName}/>
 }
-//test
